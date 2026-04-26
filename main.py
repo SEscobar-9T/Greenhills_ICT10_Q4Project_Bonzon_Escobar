@@ -88,7 +88,7 @@ def attend_track(e):
     plt.ylabel('Workday')
 
 # photos
-def photo_show
+def photo_show(e):
     display('Intrams 25-26', target=''output1)
 
 show_captions()
