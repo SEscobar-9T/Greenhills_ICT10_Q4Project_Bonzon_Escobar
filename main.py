@@ -30,7 +30,7 @@ def show_creds(e):
     student1 = StudentAddition(name, section, favsub)
     classlist.append(student1)
 
-    display(f'{student1.name} from {student1.section} loves the {student1.favsub} subject.', target='output')
+    display(f'{student1.name} from {student1.section} loves the {student1.favsub} subject.', target='output3')
 
 listStudent = [
     StudentAddition('Jalainie Abdullah', '10-Topaz', 'Filipino'),
@@ -89,6 +89,6 @@ def attend_track(e):
 
 # photos
 def photo_show(e):
-    display('Intrams 25-26', target=''output1)
+    display('Intrams 25-26', target='output1')
 
-show_captions()
+photo_show()
