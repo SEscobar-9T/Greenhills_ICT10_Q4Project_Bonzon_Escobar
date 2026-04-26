@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Topaz Through the Years</title>
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+        <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://plumbclub.com/wp-content/uploads/2022/11/yellow-topaz-gemstone-hero.jpg);
+    background-size: cover;
+    }
+
+    h2, p {
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(94, 32, 230);
+    background-color: bisque;
+    border-radius: 10px;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFC87C;
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    color: rgb(94, 32, 230);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #d47e05;
+    }
+
+        div {
+             font-size: 20px;
+        }
+
+form {
+    background-color: #d47e05;
+    border-radius: 10px;
+    padding: 40px ;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;       
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><strong><a href="index.html">Photo Album</a></strong></li>
+  <li><strong><a href="#list">Student List</a></strong></li>
+  <li><strong><a href="attendance.html">Class Attendance Tracker</a></strong></li>
+</ul>
+
+    <form>
+        <h2><marquee> - 📋Topaz Student List📋 - </marquee></h2>
+    </form>
+    <br>
+    <br>
+
+    <form>
+        <a>Name:</a>
+        <input type="text" id="inputlist2" placeholder="enter name:">
+        <br>
+        <br>
+        <a>Section:</a>
+        <input type="text" id="inputlist3" placeholder="enter section:">
+        <br>
+        <br>
+        <a>Favorite Subject:</a>
+        <input type="text" id="inputlist1" placeholder="enter favorite subject:">
+        <br>
+        <br>
+        <button type="button" py-click="show_creds" value="addition_student">Add Classmate</button>
+        <br>
+        <br>
+        <button type="button" py-click="show_class" value="show_list">Show Class List</button>
+    </form>
+
+    <br>
+    <br>
+    <form>
+    <h2>List of Students:</h2>
+    <br>
+    <div id="output2"></div>
+    </form>
+
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>

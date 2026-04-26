@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Topaz Through the Years</title>
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://plumbclub.com/wp-content/uploads/2022/11/yellow-topaz-gemstone-hero.jpg);
+    background-size: cover;
+    }
+
+    h2, p {
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(94, 32, 230);
+    background-color: bisque;
+    border-radius: 10px;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFC87C;
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    color: rgb(94, 32, 230);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #d47e05;
+    }
+
+        div {
+             font-size: 20px;
+        }
+
+        form {
+           background-color: #d47e05;
+           border-radius: 10px;
+           padding: 40px ;
+           margin: 0 auto;
+           width: 700px;
+           text-align: center;
+        }
+
+       button {
+            background-color: rgb(247, 58, 58);
+            color: white;
+            font-size: 15px;
+        }
+
+        .dropbtn {
+            background-color: rgb(247, 58, 58);
+            color: white;
+            font-size: 15px;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 0 auto;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(247, 58, 58);
+        }
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><strong><a href="index.html">Photo Album</a></strong></li>
+  <li><strong><a href="classystem.html">Student List</a></strong></li>
+  <li><strong><a href="#attendance">Class Attendance Tracker</a></strong></li>
+</ul>
+
+    <form>
+        <h2><marquee>- 📊Attendance Tracker📊 -</marquee></h2>
+        <hr />
+    </form>
+        <br>
+        <br>
+
+    <form>
+        <a><strong>Select Day:</strong></a>
+        <div class="dropdown">
+        <!-- <button class="dropbtn">Weekday</button> -->
+        <select  id="absent_day">
+            <option value="0">Monday</a>
+            <option value="1">Tuesday</a>
+            <option value="2">Wednesday</a>
+            <option value="3">Thursday</a>
+            <option value="4">Friday</a>
+        </select>
+        </div>
+        <br>
+        <br>
+
+
+        <a><strong>Absences:</strong></a>
+        <input type="number" id="inputattend" placeholder="enter number of days absent:">
+        <br>
+        <br>
+       
+        <button type="button" py-click="attend_track" value="absence_click">Show Graph</button>
+        <br>
+        <br>
+        <hr />
+    </form>
+
+<div id="output3"></div>
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
