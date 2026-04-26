@@ -91,4 +91,4 @@ def attend_track(e):
 def photo_show(e):
     display('Intrams 25-26', target='output1')
 
-photo_show()
+photo_show(None)
