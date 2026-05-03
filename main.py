@@ -30,7 +30,7 @@ def show_creds(e):
     student1 = StudentAddition(name, section, favsub)
     classlist.append(student1)
 
-    display(f'{student1.name} from {student1.section} loves the {student1.favsub} subject.', target='output3')
+    display(f'{student1.name} from {student1.section} loves the {student1.favsub} subject.', target='output2')
 
 listStudent = [
     StudentAddition('Jalainie Abdullah', '10-Topaz', 'Filipino'),
