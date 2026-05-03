@@ -86,9 +86,3 @@ def attend_track(e):
     plt.title("Weekly Attendance (Absences)")
     plt.xlabel('Number of Absences')
     plt.ylabel('Workday')
-
-# photos
-def photo_show(e):
-    display('Intrams 25-26', target='output1')
-
-photo_show(None)
